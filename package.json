@@ -1,0 +1,33 @@
+{
+  "name": "lib-albertid",
+  "version": "1.0.0",
+  "description": "Mocha Chai Framework",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "aws-sdk": "^2.655.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "start": "node .",
+    "func": "mocha -t -100000 --recursive 'test/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git-remote-url"
+  },
+  "author": "Geetha",
+  "license": "ISC",
+  "keywords": [
+    "Mocha",
+    "Chai",
+    "UnitTest"
+  ],
+  "directories": {
+    "test": "test"
+  }
+}
