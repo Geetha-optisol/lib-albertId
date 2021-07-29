@@ -6,8 +6,8 @@ chai.use(chaiHttp);
 const { generate } = require('../index');
 
 //Variable declaration
-let tenantId = "1";
-let entity = "Inventory";
+let tenantId = "ten1";
+let entity = "inventory";
 let categoryId = "A";
 
 
