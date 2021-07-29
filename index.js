@@ -11,8 +11,8 @@ const dotenv = require('dotenv').config()
  * @returns {Object}
  */
 async function generate(tenantId, entity, categoryId) {
-    let albertId = (entity === "Company") ? "com" : (entity === "Inventory") ? "inv" : entity;
-    let key = categoryId ? { "PK": `ten${tenantId}#${albertId}`, SK: categoryId } : { "PK": `ten${tenantId}#${albertId}` };
+    let albertId = entity.substr(0, 3);
+    let key = categoryId ? { "PK": `${tenantId}#${albertId}`, SK: categoryId } : { "PK": `${tenantId}#${albertId}` };
     return new Promise(function (resolve, reject) {
         docClient.update({
             "TableName": process.env.TABLE,
