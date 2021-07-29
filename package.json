@@ -1,5 +1,5 @@
 {
-  "name": "lib-albertid",
+  "name": "lib-idgen",
   "version": "1.0.0",
   "description": "Mocha Chai Framework",
   "main": "index.js",
