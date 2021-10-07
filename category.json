@@ -13,8 +13,12 @@
     "REP": [],
     "PRJ": [],
     "LOT": [],
+    "LOTNUM": [],
     "DOE": [],
     "NOT": [],
     "ATT": [],
-    "SET": []
+    "SET": [],
+    "CAS": [],
+    "TSK": [],
+    "PROPTSK": []
 }
