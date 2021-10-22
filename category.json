@@ -20,5 +20,6 @@
     "SET": [],
     "CAS": [],
     "TSK": [],
-    "PROPTSK": []
+    "PROPTSK": [],
+    "PRC": []
 }
