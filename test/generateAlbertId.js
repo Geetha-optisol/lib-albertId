@@ -25,6 +25,12 @@ describe("*** Method : GET - generate Service ***", async function (done) {
         expect(generated).to.be.a('number');
     }).timeout(5000);
 
+    it('generate : Positive Scenario --> data exists for 20 number of records', async () => {
+        let generated = await IdGenerator.generate(tenantId, entity, categoryId, false, 20);
+        assert.ok(generated);
+        expect(generated).to.be.a('string');
+    }).timeout(5000);
+
     it('generate : Positive Scenario --> data exists without category', async () => {
         let generated = await IdGenerator.generate(tenantId, 'COM');
         assert.ok(generated);

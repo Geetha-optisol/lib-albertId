@@ -14,7 +14,7 @@ var entityCategory = require('./category.json');
 
 module.exports = function (tbName) {
     const table = tbName;
-    generate = async (tenantId, entity, categoryId = "", counterOnly = false) => {
+    generate = async (tenantId, entity, categoryId = "", counterOnly = false, N = 1) => {
         try {
             if (!(entityCategory[entity] && (entityCategory[entity].length < 1 || entityCategory[entity].includes(categoryId)))) {
                 throw "The entity and category is not allowed"
@@ -24,7 +24,7 @@ module.exports = function (tbName) {
                 "TableName": table,
                 "ReturnValues": "UPDATED_NEW",
                 "ExpressionAttributeValues": {
-                    ":a": 1,
+                    ":a": N,
                     ":zero": 0
                 },
                 "ExpressionAttributeNames": {

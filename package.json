@@ -1,6 +1,6 @@
 {
   "name": "lib-idgen",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Mocha Chai Framework",
   "main": "index.js",
   "dependencies": {
